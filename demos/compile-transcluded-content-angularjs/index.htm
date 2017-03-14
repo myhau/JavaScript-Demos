@@ -132,7 +132,7 @@
 				// we only have access to the "anchor comment" in this context.
 				function compile( tElement, tAttributes ) {
 
-					console.log( "Container at compile (html):", tElement.html() );
+					console.log( "Container at compile (html):" + tElement.html() );
 
 					tElement.addClass( "container" );
 
@@ -146,7 +146,7 @@
 				// compiled by the time we get the clone.
 				function link( scope, element, attributes, _c, transclude ) {
 
-					console.log( "Container at link (html):", element.html() );
+					console.log( "Container at link (html):" + element.html() );
 					
 					// Clone and inject the transcluded content.
 					transclude(
